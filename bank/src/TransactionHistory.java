@@ -8,10 +8,10 @@ public class TransactionHistory {
     private String beneficiaryName;
     private int money;
 
-    public TransactionHistory(String description, String beneficiaryName, int money) {
+    public TransactionHistory(long  id, int money,  String description,LocalDateTime dateTrading,String beneficiaryName ) {
 
-        this.id = IdGenerate.getNewID();
-        this.dateTrading = LocalDateTime.now();
+        this.id = id;
+        this.dateTrading = dateTrading;
         this.description = description;
         this.beneficiaryName = beneficiaryName;
         this.money = money;
